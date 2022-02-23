@@ -7,3 +7,18 @@ $(document).ready(async function() {
 
     $('.card img').attr('src', `${response.avatar}?size=1024`);
 });
+
+function wait(time) {
+    let date = Date.now();
+    let current = null;
+    
+    do {
+        current = Date.now();
+    } while (current - date < time);
+}
+
+window.onload = function () {
+    let loader = $('#loader-wrapper');
+    wait(100);
+    loader.css('display', 'none');
+};
