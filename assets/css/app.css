@@ -94,6 +94,12 @@ body {
     width: 25% !important;
 }
 
+@media screen and (max-width: 1024px) {
+    .card-width {
+        width: 35% !important;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .card-width {
         width: 70% !important;

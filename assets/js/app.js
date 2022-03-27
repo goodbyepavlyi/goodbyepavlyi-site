@@ -8,8 +8,13 @@ $(document).ready(async function() {
     $('.card img').attr('src', `${response.avatar}?size=1024`);
 });
 
-$("#link-discord").on("mouseover", function () {
-    console.log("l");
+$("#link-discord").on({
+    mouseenter: function () {
+        $(this).html('<i class="fab fa-discord"></i>goodbyepavlyi ♡#0404');
+    },
+    mouseleave: function () {
+        $(this).html('<i class="fab fa-discord"></i>Discord');
+    }
 });
 
 function wait(time) {
