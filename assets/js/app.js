@@ -8,6 +8,10 @@ $(document).ready(async function() {
     $('.card img').attr('src', `${response.avatar}?size=1024`);
 });
 
+$("#link-discord").on("mouseover", function () {
+    console.log("l");
+});
+
 function wait(time) {
     let date = Date.now();
     let current = null;
