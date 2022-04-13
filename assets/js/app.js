@@ -10,7 +10,7 @@ $(document).ready(async function() {
 
 $("#link-discord").on({
     mouseenter: function () {
-        $(this).html('<i class="fab fa-discord"></i>goodbyepavlyi ♡#0404');
+        $(this).html('<i class="fab fa-discord"></i>goodbyepavlyi ♡#1558');
     },
     mouseleave: function () {
         $(this).html('<i class="fab fa-discord"></i>Discord');
