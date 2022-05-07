@@ -69,6 +69,16 @@ body {
     font-size: 42px;
 }
 
+@media (max-width: 992px) {
+    .intro_1 {
+        font-size: 36px;
+    }
+
+    .intro_2 {
+        font-size: 21px;
+    }
+}
+
 
 #me_img {
     min-width: 800px;
