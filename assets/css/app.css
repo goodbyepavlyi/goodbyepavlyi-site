@@ -1,125 +1,111 @@
-@import url('/assets/css/loader.css');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* @import url('/assets/css/loader.css'); */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@font-face {
+    font-family: "RockoUltraFLF";
+    src: url("//db.onlinewebfonts.com/t/569773497d938dfd9749337887f5edde.eot");
+    src: url("//db.onlinewebfonts.com/t/569773497d938dfd9749337887f5edde.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/569773497d938dfd9749337887f5edde.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/569773497d938dfd9749337887f5edde.woff") format("woff"), url("//db.onlinewebfonts.com/t/569773497d938dfd9749337887f5edde.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/569773497d938dfd9749337887f5edde.svg#RockoUltraFLF") format("svg");
+}
+
+:root {
+    --colors-accent-20: #6B658733;
+    --colors-accent-40: #6B658766;
+    --colors-accent-60: #6B658799;
+    --colors-accent-80: #6B6587cc;
+    --colors-accent-100: #6B6587;
+}
+
+
+p {
+    margin-block-start: unset;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(rgba(44,47,51,0.6), #2c2f33 100%) fixed, url('/assets/img/background.jpg') center / cover no-repeat fixed;
-    min-height: 100vh;
+    background-color: #fffaf5;
+    font-family: RockoUltraFLF;
+    margin: unset;
 }
 
-::-webkit-scrollbar {
-    width: 10px;
-    height: 5px;
-}
-::-webkit-scrollbar-track {
-    background: #1d1e28;
-}
-::-webkit-scrollbar-thumb {
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    background-image: -webkit-linear-gradient(0deg, #e8a8c6, #e8a8c6);
-    border-radius: 5px;
+.main_container {
+    height: 500px;
+    display: flex;
+    flex-direction: row;
 }
 
-::selection {
-    background-color: #5E4954;
+.inner_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5%;
+    width: 1200px;
 }
 
-/*
-    *CARD
-*/
-.card {
-    border-radius: 20px;
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px) brightness(0.9);
-    background: none;
-    border: none;
+.socials {
+    display: flex;
+    flex-direction: row;
 }
 
-.card img#pfp {
+.social_button {
+    margin: 10px;
+    display: block;
+    width: 42px;
+    height: 42px;
     border-radius: 50%;
-    height: 100px;
+    background-color: #feece4;
 }
 
-.card .name {
-    font-size: 30px;
-    font-weight: 500;
-    padding: 10px 0 15px;
-}
-
-.card .link {
+.social_button_img {
     width: 100%;
-    margin-top: 20px;
-    padding: 15px;
-
-    color: #fff;
-    font-size: 20px;
-    text-decoration: none;
-    text-align: center;
-
-    border: 1px solid white;
-    border-width: 2px;
-    border-radius: 50px;
-
-    transition: background-color 0.3s;
 }
 
-.card .link:hover {
-    background: hsla(0, 0%, 100%, 0.125);
+.intro_1 {
+    color: #f9b49e;
+    font-size: 96px;
 }
 
-.card a i {
-    float: left !important;
-    font-size: 30px;
+.intro_2 {
+    display: flex;
+    flex-direction: row;
+    color: #ffcaba;
+    font-size: 42px;
 }
 
-.bottom-text {
-    color: #fff;
-    text-align: center;
-    margin-top: 40px;
-    font-size: 15px;
+
+#me_img {
+    min-width: 800px;
+    height: 100%;
+    background: url('img') no-repeat;
+    background-size: cover;
+    background-position: center;
+    float: right;
 }
 
-.card-height {
-    height: 100% !important;
+.second_container {
+    padding: 30px;
+    background-color: #ffeee2;
 }
 
-.card-width {
-    width: 25% !important;
+.projects {
+    flex-direction: row;
+    display: flex;
 }
 
-@media screen and (max-width: 1024px) {
-    .card-width {
-        width: 35% !important;
-    }
+.box {
+    border-radius: 30px;
+    background-color: #f2fcff;
+    padding: 20px;
+    color: #8ac6d9;
+    font-size: 32px;
 }
 
-@media screen and (max-width: 768px) {
-    .card-width {
-        width: 70% !important;
-    }
-
-    .card-height {
-        margin: 5% 0 !important;
-    }
-
-    .card .name {
-        font-size: 25px;
-    }
-
-    .card .link {
-        width: 105%;
-    }
+.box a {
+    color: #558d9e;
 }
 
-@media screen and (max-width: 500px) {
-    .card-width {
-        width: 90% !important;
-    }
+.box a:hover {
+    color: #558d9e;
+    opacity: 70%;
+}
+
+.box ul {
+    font-size: 24px;
 }

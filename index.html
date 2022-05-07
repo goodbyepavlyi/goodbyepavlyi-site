@@ -1,39 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="theme-color" content="#ffeee2" />
 
+        <!-- Primary Meta Tags -->
         <title>@goodbyepavlyi</title>
-        <meta name="og:title" content="@goodbyepavlyi" />
-        <meta name="og:site_name" content="@goodbyepavlyi" />
-        <meta name="twitter:title" content="@goodbyepavlyi" />
+        <meta name="title" content="@goodbyepavlyi" />
+        <meta name="description" content="Check out my projects and work!" />
 
-        <meta name="image" content="https://goodbyepavlyi.tk/assets/img/profile.png" />
-        <meta name="og:image" content="https://goodbyepavlyi.tk/assets/img/profile.png" />
-        <meta name="twitter:img:src" content="https://goodbyepavlyi.tk/assets/img/profile.png" />
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://goodbyepavlyi.tk/" />
+        <meta property="og:title" content="@goodbyepavlyi" />
+        <meta property="og:description" content="Check out my projects and work!" />
 
-        <meta name="twitter:site" content="@goodbyepavlyi" />
-        <meta name="twitter:card" content="summary" />
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://goodbyepavlyi.tk/" />
+        <meta property="twitter:title" content="@goodbyepavlyi" />
+        <meta property="twitter:description" content="Check out my projects and work!" />
 
-        <meta name="description" content="An experienced back end developer with a passion for developing applications." />
-        <meta name="twitter:description" content="An experienced back end developer with a passion for developing applications." />
-        <meta name="og:description" content="An experienced back end developer with a passion for developing applications." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <meta name="og:type" content="website" />
+        <link rel="icon" href="https://cdn.discordapp.com/attachments/972565235418419262/972565275784384572/0ba8bc4058e3af29d04a48d9abe31e92.png" />
 
-        <meta name="theme-color" content="#e8a8c6" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge" />
-        <link rel="manifest" href="/manifest.webmanifest">
-
-        <link rel="icon" type="image/png" sizes="512x512" href="/assets/img/profile.png">
-
-        <link rel="stylesheet" href="/vendor/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="/vendor/css/fontawesome.css" />
-        <link rel="stylesheet" href="/assets/css/app.css?1287456910" />
+        <link rel="stylesheet" href="assets/css/app.css" />
     </head>
 
-    <body class="d-flex align-items-center justify-content-center mw-100 mh-100">
+    <body>
         <div id="loader-wrapper">
             <div id="loader"></div>
          
@@ -41,23 +36,48 @@
             <div class="loader-section section-right"></div> 
         </div>
 
-        <div class="card card-height card-width p-5 d-flex flex-column align-items-center justify-content-center text-white">
-            <img id="pfp" src="/assets/img/profile.png" alt="Profile Picture" />
+        <div class="main_container" style="display: none">
+            <div class="inner_container">
+                <div class="socials">
+                    <a class="social_button" href="https://github.com/goodbyepavlyi">
+                        <img class="social_button_img"
+                            src="https://cdn.discordapp.com/attachments/972565235418419262/972569047570972772/unknown.png" />
+                    </a>
 
-            <h1 class="name">goodbyepavlyi ♡</h1>
+                    <a class="social_button" href="#" onclick="showTag()">
+                        <img class="social_button_img"
+                            src="https://cdn.discordapp.com/attachments/972565235418419262/972569047336112178/unknown.png" />
+                    </a>
 
-            <a class="link" id="link-instagram" href="https://instagram.com/goodbyepavlyi"><i class="fab fa-instagram"></i>Instagram</a>
-            <a class="link" id="link-discord" href="#"><i class="fab fa-discord"></i>Discord</a>
-            <a class="link" id="link-github" href="https://github.com/goodbyepavlyi"><i class="fab fa-github"></i>Github</a>
-            <a class="link" id="link-spotify" href="https://open.spotify.com/user/zzt37ccfb22cyvd14os4r8mr4?si=b4e07c26908541ef"><i class="fab fa-spotify"></i>Spotify</a>
-            <a class="link" id="link-donate" href="https://ko-fi.com/goodbyepavlyi"><i class="fas fa-heart"></i>Donate</a>
-            <a class="link" id="link-waya" href="https://moshibot.tk"><i class="fas fa-link"></i>Moshi</a>
-            
-            <p class="bottom-text"><i class="fas fa-code"></i> with <i class="fas fa-heart"></i> by goodbyepavlyi</p>
+                    <a class="social_button" href="https://www.instagram.com/goodbyepavlyi/">
+                        <img class="social_button_img"
+                            src="https://cdn.discordapp.com/attachments/972565235418419262/972569047780700230/unknown.png" />
+                    </a>
+
+                    <a class="social_button" href="https://open.spotify.com/user/zzt37ccfb22cyvd14os4r8mr4">
+                        <img class="social_button_img"
+                            src="https://cdn.discordapp.com/attachments/972565235418419262/972569048023965777/unknown.png" />
+                    </a>
+                </div>
+
+                <div class="intro_1">Hi! I'm goodbyepavlyi</div>
+                <div class="intro_2">
+                    <p class="typewrite" data-period="2000"
+                        data-type='[ "And I am a  developer." ]'>
+                        <span class="wrap">And I car</span>
+                    </p>
+                </div>
+            </div>
         </div>
 
+        <style type="text/css">
+            .typewrite>.wrap {
+                border-right: 0.08em solid #ffcaba;
+            }
+        </style>
+
+        <script src="/vendor/js/jquery.min.js"></script>
+        <script src="/assets/js/app.js"></script>
     </body>
 
-    <script src="/vendor/js/jquery.min.js"></script>
-    <script src="/assets/js/app.js?1287456910"></script>
 </html>
