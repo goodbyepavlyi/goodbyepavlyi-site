@@ -1,121 +1,86 @@
 /* @import url('/assets/css/loader.css'); */
 
 @font-face {
-    font-family: "RockoUltraFLF";
-    src: url("//db.onlinewebfonts.com/t/569773497d938dfd9749337887f5edde.eot");
-    src: url("//db.onlinewebfonts.com/t/569773497d938dfd9749337887f5edde.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/569773497d938dfd9749337887f5edde.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/569773497d938dfd9749337887f5edde.woff") format("woff"), url("//db.onlinewebfonts.com/t/569773497d938dfd9749337887f5edde.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/569773497d938dfd9749337887f5edde.svg#RockoUltraFLF") format("svg");
+  font-family: "RockoUltraFLF";
+  src: url("//db.onlinewebfonts.com/t/569773497d938dfd9749337887f5edde.eot");
+  src: url("//db.onlinewebfonts.com/t/569773497d938dfd9749337887f5edde.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/569773497d938dfd9749337887f5edde.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/569773497d938dfd9749337887f5edde.woff") format("woff"), url("//db.onlinewebfonts.com/t/569773497d938dfd9749337887f5edde.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/569773497d938dfd9749337887f5edde.svg#RockoUltraFLF") format("svg");
 }
 
 :root {
-    --colors-accent-20: #6B658733;
-    --colors-accent-40: #6B658766;
-    --colors-accent-60: #6B658799;
-    --colors-accent-80: #6B6587cc;
-    --colors-accent-100: #6B6587;
+  --colors-accent-20: #fafafa33;
+  --colors-accent-40: #fafafa66;
+  --colors-accent-60: #fafafa99;
+  --colors-accent-80: #fafafacc;
+  --colors-accent-100: #fafafa;
 }
 
 
 p {
-    margin-block-start: unset;
+  margin-block-start: unset;
 }
 
 body {
-    background-color: #fffaf5;
-    font-family: RockoUltraFLF;
-    margin: unset;
+  background-color: #121212;
+  font-family: RockoUltraFLF;
+  margin: unset;
 }
 
 .main_container {
-    height: 500px;
-    display: flex;
-    flex-direction: row;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
 }
 
 .inner_container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 5%;
-    width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5%;
+  width: 1200px;
 }
 
 .socials {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .social_button {
-    margin: 10px;
-    display: block;
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-    background-color: #feece4;
+  margin: 10px;
+  display: block;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #1d1d1d;
 }
 
 .social_button_img {
-    width: 100%;
+  width: 100%;
+  filter: brightness(0) invert(1);
+
 }
 
 .intro_1 {
-    color: #f9b49e;
-    font-size: 96px;
+  color: var(--colors-accent-100);
+  font-size: 96px;
 }
 
 .intro_2 {
-    display: flex;
-    flex-direction: row;
-    color: #ffcaba;
-    font-size: 42px;
+  display: flex;
+  flex-direction: row;
+  color: var(--colors-accent-100);
+  font-size: 42px;
 }
 
 @media (max-width: 992px) {
-    .intro_1 {
-        font-size: 36px;
-    }
+  .intro_1 {
+    font-size: 36px;
+  }
 
-    .intro_2 {
-        font-size: 21px;
-    }
+  .intro_2 {
+    font-size: 21px;
+  }
 }
 
-
-#me_img {
-    min-width: 800px;
-    height: 100%;
-    background: url('img') no-repeat;
-    background-size: cover;
-    background-position: center;
-    float: right;
-}
-
-.second_container {
-    padding: 30px;
-    background-color: #ffeee2;
-}
-
-.projects {
-    flex-direction: row;
-    display: flex;
-}
-
-.box {
-    border-radius: 30px;
-    background-color: #f2fcff;
-    padding: 20px;
-    color: #8ac6d9;
-    font-size: 32px;
-}
-
-.box a {
-    color: #558d9e;
-}
-
-.box a:hover {
-    color: #558d9e;
-    opacity: 70%;
-}
-
-.box ul {
-    font-size: 24px;
+.typewrite>.wrap {
+  border-right: 0.08em solid var(--colors-accent-100);
 }
