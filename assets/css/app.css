@@ -1,7 +1,6 @@
 @font-face {
   font-family: "RockoUltraFLF";
-  src: url("//db.onlinewebfonts.com/t/569773497d938dfd9749337887f5edde.eot");
-  src: url("//db.onlinewebfonts.com/t/569773497d938dfd9749337887f5edde.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/569773497d938dfd9749337887f5edde.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/569773497d938dfd9749337887f5edde.woff") format("woff"), url("//db.onlinewebfonts.com/t/569773497d938dfd9749337887f5edde.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/569773497d938dfd9749337887f5edde.svg#RockoUltraFLF") format("svg");
+  src: url("/assets/font/RockoUltraFLF.woff2");
 }
 
 :root {
